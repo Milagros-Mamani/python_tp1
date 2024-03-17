@@ -50,6 +50,9 @@ for i in range(max_attempts):
      if word_displayed == secret_word:
          print(f"¡Felicidades! Has adivinado la palabra secreta:{secret_word}")
          break
-     else:
-         print(f"¡Oh no! Has agotado tus {max_attempts} intentos.")
-         print(f"La palabra secreta era: {secret_word}")
+     
+if word_displayed == secret_word:
+     print(f"¡Felicidades! Has adivinado la palabra secreta:{secret_word}")     
+else:
+     print(f"¡Oh no! Has agotado tus {max_attempts} intentos.")
+     print(f"La palabra secreta era: {secret_word}")
